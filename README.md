@@ -11,6 +11,7 @@ Commits are automated using the [leethubv2](https://github.com/arunbhardwaj/Leet
 ## Math
 |  |
 | ------- |
+| [0002-add-two-numbers](https://github.com/nkoji21/leetcode/tree/master/0002-add-two-numbers) |
 | [0013-roman-to-integer](https://github.com/nkoji21/leetcode/tree/master/0013-roman-to-integer) |
 ## String
 |  |
@@ -20,4 +21,12 @@ Commits are automated using the [leethubv2](https://github.com/arunbhardwaj/Leet
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/nkoji21/leetcode/tree/master/0001-two-sum) |
+## Linked List
+|  |
+| ------- |
+| [0002-add-two-numbers](https://github.com/nkoji21/leetcode/tree/master/0002-add-two-numbers) |
+## Recursion
+|  |
+| ------- |
+| [0002-add-two-numbers](https://github.com/nkoji21/leetcode/tree/master/0002-add-two-numbers) |
 <!---LeetCode Topics End-->
