@@ -30,4 +30,8 @@ Commits are automated using the [leethubv2](https://github.com/arunbhardwaj/Leet
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/nkoji21/leetcode/tree/master/0002-add-two-numbers) |
+## Backtracking
+|  |
+| ------- |
+| [0052-n-queens-ii](https://github.com/nkoji21/leetcode/tree/master/0052-n-queens-ii) |
 <!---LeetCode Topics End-->
