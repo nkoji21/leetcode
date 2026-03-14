@@ -92,7 +92,7 @@ static int getIndexFromHashMap(const HashMap *hashmap, int value, int *out_index
 int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
     *returnSize = 2;
 
-    HashMap *hashmap = newHashMap(numsSize * 2 + 1);
+    HashMap *hashmap = newHashMap(numsSize);
     if (!hashmap)
         return (NULL);
 
