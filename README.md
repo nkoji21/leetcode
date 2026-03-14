@@ -1,6 +1,6 @@
 # leetcode
 
-Commits are automated using the [leetcode-tracker](https://github.com/JeffreyGbeho/leetcode-tracker) Chrome extension.
+Commits are automated using the [leethubv2](https://github.com/arunbhardwaj/LeetHub-2.0) Chrome extension.
 <!---LeetCode Topics Start-->
 # LeetCode Topics
 ## Hash Table
