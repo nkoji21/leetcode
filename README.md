@@ -6,6 +6,7 @@ Commits are automated using the [leetcode-tracker](https://github.com/JeffreyGbe
 ## Hash Table
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/nkoji21/leetcode/tree/master/0001-two-sum) |
 | [0013-roman-to-integer](https://github.com/nkoji21/leetcode/tree/master/0013-roman-to-integer) |
 ## Math
 |  |
@@ -15,4 +16,8 @@ Commits are automated using the [leetcode-tracker](https://github.com/JeffreyGbe
 |  |
 | ------- |
 | [0013-roman-to-integer](https://github.com/nkoji21/leetcode/tree/master/0013-roman-to-integer) |
+## Array
+|  |
+| ------- |
+| [0001-two-sum](https://github.com/nkoji21/leetcode/tree/master/0001-two-sum) |
 <!---LeetCode Topics End-->
