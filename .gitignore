@@ -1,8 +1,8 @@
 _result
 language
-main.c
-main.cpp
-main.py
+/main.c
+/main.cpp
+/main.py
 main
 *.out
 *.exe
