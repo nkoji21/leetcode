@@ -2,8 +2,8 @@
 
 set -e
 
-# Colors
 RED='\033[0;31m'
+GREEN='\033[0;32m'
 YELLOW='\033[0;33m'
 RESET='\033[0m'
 
@@ -16,13 +16,15 @@ lang=$(cat ./language)
 
 case "$lang" in
   c)
-    echo -e "${YELLOW}ℹ️  For C, run: ./main <args>${RESET}"
+    gcc main.c -o main
+    echo -e "${GREEN}✅ Built main${RESET}"
     ;;
   cpp)
-    echo -e "${YELLOW}ℹ️  For C++, run: ./main <args>${RESET}"
+    g++ main.cpp -o main
+    echo -e "${GREEN}✅ Built main${RESET}"
     ;;
   python)
-    python3 main.py "$@"
+    echo -e "${YELLOW}ℹ️  Interpreted language, nothing to build${RESET}"
     ;;
   *)
     echo -e "${RED}❌ Invalid language in ./language: ${lang}${RESET}"
