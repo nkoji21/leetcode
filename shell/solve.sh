@@ -56,7 +56,7 @@ cp "${source_file}" "${dest_file}"
 
 echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${RESET}"
 git add "${dest_file}"
-git commit -m "leetcode ${padded}"
+git commit -m "problem ${padded}"
 echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${RESET}"
 
 echo -e "${GREEN}🔄 Resetting ${source_file} from template${RESET}"
