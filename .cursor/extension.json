@@ -1,0 +1,6 @@
+{
+  "extensions": [
+    "llvm-vs-code-extensions.vscode-clangd",
+    "xaver.clang-format"
+  ]
+}
