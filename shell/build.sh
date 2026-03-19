@@ -16,11 +16,11 @@ lang=$(cat ./language)
 
 case "$lang" in
   c)
-    gcc main.c -o main
+    gcc main.c
     echo -e "${GREEN}✅ Built main${RESET}"
     ;;
   cpp)
-    g++ main.cpp -o main
+    g++ main.cpp
     echo -e "${GREEN}✅ Built main${RESET}"
     ;;
   python)
