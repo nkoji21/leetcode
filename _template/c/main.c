@@ -1,8 +1,9 @@
 #include <stdio.h>
 
-int main(int ac, char **av) {
-  (void)ac;
+static inline int max(int a, int b) { return a < b ? b : a; }
+static inline int min(int a, int b) { return a < b ? a : b; }
 
-  printf("%s\n", av[1]);
+int main(void) {
+  printf("Hello world!");
   return 0;
 }
