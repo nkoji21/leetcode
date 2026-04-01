@@ -1,4 +1,4 @@
-.PHONY: all init setlang sv run
+.PHONY: all init sl sv run
 
 all:
 	@./shell/build.sh
@@ -6,7 +6,7 @@ all:
 init:
 	@./shell/init.sh
 
-setlang:
+sl:
 	@./shell/setlang.sh
 
 sv:
