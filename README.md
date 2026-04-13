@@ -30,7 +30,7 @@ make sv
 ```
 
 Enter the problem number (e.g., `17`):
-- Saves to `_result/0017.{ext}` (4-digit zero-padded)
+- Saves to `_results/<contest>/0017.{ext}` (4-digit zero-padded)
 - Auto-commits to git
 - Resets working file to template
 
@@ -46,19 +46,22 @@ Switch to a different language.
 
 ```
 .
-├── main.c           # Working file
+├── main.c / main.cpp / main.py  # Working file (language-dependent)
 ├── language         # Current language setting
+├── contest          # Current contest setting (lc/nc)
 ├── Makefile
 ├── shell/
-│   ├── init.sh      # Initial setup
-│   ├── setlang.sh   # Language switcher
-│   └── solve.sh     # Solution saver
+│   ├── init.sh         # Initial setup
+│   ├── setlang.sh      # Language switcher
+│   ├── setcontest.sh   # Contest switcher
+│   └── solve.sh        # Solution saver
 ├── _template/       # Language templates
 │   ├── c/main.c
 │   ├── cpp/main.cpp
 │   └── python/main.py
-└── _result/         # Saved solutions
-    ├── 0001.c
-    ├── 0002.c
-    └── ...
+└── _results/        # Saved solutions
+    └── lc/
+        ├── 0001.c
+        ├── 0002.c
+        └── ...
 ```
