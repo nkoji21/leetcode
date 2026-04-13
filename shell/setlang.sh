@@ -36,6 +36,7 @@ if [ ! -f "_template/${lang}/main.${ext}" ]; then
   exit 1
 fi
 
+rm -f ./main.c ./main.cpp ./main.py
 cp "_template/${lang}/main.${ext}" "./main.${ext}"
 
 echo -e "${GREEN}✅ Language set: ${lang}${RESET}"
