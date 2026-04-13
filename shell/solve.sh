@@ -10,11 +10,17 @@ BLUE='\033[0;34m'
 RESET='\033[0m'
 
 if [ ! -f ./language ]; then
-  echo -e "${RED}❌ Language not set. Run 'make init' or 'make setlang' first.${RESET}"
+  echo -e "${RED}❌ Language not set. Run 'make init' or 'make sl' first.${RESET}"
+  exit 1
+fi
+
+if [ ! -f ./contest ]; then
+  echo -e "${RED}❌ Contest not set. Run 'make sc' first.${RESET}"
   exit 1
 fi
 
 lang=$(cat ./language)
+contest=$(cat ./contest)
 
 case "$lang" in
   c)
@@ -48,10 +54,10 @@ if ! [[ "$num" =~ ^[0-9]+$ ]]; then
 fi
 
 padded=$(printf "%04d" "$num")
-dest_file="_result/${padded}.${ext}"
+dest_file="_results/${contest}/${padded}.${ext}"
 
 echo -e "${BLUE}💾 Saving to ${dest_file}${RESET}"
-mkdir -p "_result"
+mkdir -p "_results/${contest}"
 cp "${source_file}" "${dest_file}"
 
 echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${RESET}"
@@ -63,4 +69,4 @@ echo -e "${GREEN}🔄 Resetting ${source_file} from template${RESET}"
 cp "_template/${lang}/${source_file}" "./${source_file}"
 
 echo ""
-echo -e "${GREEN}✅ Done: leetcode ${padded}${RESET}"
+echo -e "${GREEN}✅ Done: ${contest} ${padded}${RESET}"

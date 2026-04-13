@@ -1,10 +1,13 @@
-.PHONY: all init sl sv run
+.PHONY: all init sc sl sv run
 
 all:
 	@./shell/build.sh
 
 init:
 	@./shell/init.sh
+
+sc:
+	@./shell/setcontest.sh
 
 sl:
 	@./shell/setlang.sh
