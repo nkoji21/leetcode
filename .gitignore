@@ -8,3 +8,7 @@ main
 *.exe
 __pycache__/
 *.pyc
+
+# Machine-local C++ toolchain (Homebrew g++ path, macOS SDK)
+.clangd
+.vscode/c_cpp_properties.json
