@@ -20,7 +20,7 @@ case "$lang" in
     echo -e "${GREEN}✅ Built main${RESET}"
     ;;
   cpp)
-    g++-15 -std=c++20 -isysroot "$(xcrun --sdk macosx --show-sdk-path)" main.cpp
+    g++-15 -std=c++23 -isysroot "$(xcrun --sdk macosx --show-sdk-path)" main.cpp
     echo -e "${GREEN}✅ Built main${RESET}"
     ;;
   python)
