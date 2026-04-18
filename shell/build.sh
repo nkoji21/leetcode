@@ -16,12 +16,14 @@ lang=$(cat ./language)
 
 case "$lang" in
   c)
-    gcc main.c
-    echo -e "${GREEN}✅ Built main${RESET}"
+    gcc main.c -o main
+    echo -e "${GREEN}✅ Built: main${RESET}"
     ;;
   cpp)
-    g++-15 -std=c++23 -isysroot "$(xcrun --sdk macosx --show-sdk-path)" main.cpp
-    echo -e "${GREEN}✅ Built main${RESET}"
+    SYSROOT=$(xcrun --show-sdk-path 2>/dev/null || echo "")
+    SYSROOT_FLAG=${SYSROOT:+-isysroot "$SYSROOT"}
+    g++-15 -std=c++23 -O2 $SYSROOT_FLAG main.cpp -o main
+    echo -e "${GREEN}✅ Built: main${RESET}"
     ;;
   python)
     echo -e "${YELLOW}ℹ️  Interpreted language, nothing to build${RESET}"
