@@ -1,6 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+#include <bits/stdc++.h>
+using namespace std;
+
 /**
 leftMax, rightMaxとして左右の壁の最も大きかった壁の高さを保持しておく
 これで水面の高さを求めることができる
@@ -11,16 +14,16 @@ class Solution {
     int ans = 0;
 
     int l = 0, r = height.size() - 1;
-    int lM = height[l], rM = height[r];
+    int leftMax = height[l], rightMax = height[r];
     while (l < r) {
-      if (lM < rM) {
+      if (leftMax < rightMax) {
         l++;
-        lM = max(lM, height[l]);
-        ans += lM - height[l];
+        leftMax = max(leftMax, height[l]);
+        ans += leftMax - height[l];
       } else {
         r--;
-        rM = max(rM, height[r]);
-        ans += rM - height[r];
+        rightMax = max(rightMax, height[r]);
+        ans += rightMax - height[r];
       }
     }
 
@@ -29,9 +32,8 @@ class Solution {
 };
 
 int main() {
-  Solution solution;
-
+  Solution soluiton;
   vector<int> height = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
-  cout << solution.trap(height) << endl;
+  cout << soluiton.trap(height) << endl;
   return 0;
 }
