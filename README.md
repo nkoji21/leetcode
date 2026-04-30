@@ -2,7 +2,9 @@
 
 LeetCode solutions repository
 
-![LeetCode Stats](https://leetcard.jacoblin.cool/nkoji)
+<a href="https://leetcode.com/u/nkoji/">
+  <img height="200" src="https://leetcard.jacoblin.cool/nkoji" alt="leetcode stats" />
+</a>
 
 ## Usage
 
