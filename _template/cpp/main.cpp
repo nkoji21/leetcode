@@ -1,7 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+class Solution {};
+
 int main() {
-  cout << "Hello, World!" << endl;
+  Solution solution;
   return 0;
 }
