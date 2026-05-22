@@ -28,6 +28,10 @@ case "$lang" in
   python)
     echo -e "${YELLOW}ℹ️  Interpreted language, nothing to build${RESET}"
     ;;
+  typescript)
+    bunx tsgo --noEmit
+    echo -e "${GREEN}✅ Type checked: main.ts${RESET}"
+    ;;
   *)
     echo -e "${RED}❌ Invalid language in ./language: ${lang}${RESET}"
     exit 1

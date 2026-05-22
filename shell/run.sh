@@ -24,6 +24,9 @@ case "$lang" in
   python)
     python3 main.py "$@"
     ;;
+  typescript)
+    bun run main.ts "$@"
+    ;;
   *)
     echo -e "${RED}❌ Invalid language in ./language: ${lang}${RESET}"
     exit 1

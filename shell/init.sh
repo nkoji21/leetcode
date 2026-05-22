@@ -12,7 +12,7 @@ RESET='\033[0m'
 echo -e "${GREEN}🔄 Initializing leetcode repository...${RESET}"
 echo ""
 
-echo -ne "${BLUE}📝 Select language (c/cpp/python): ${RESET}"
+echo -ne "${BLUE}📝 Select language (c/cpp/python/typescript): ${RESET}"
 read lang
 
 case "$lang" in
@@ -25,9 +25,12 @@ case "$lang" in
   python)
     ext="py"
     ;;
+  typescript)
+    ext="ts"
+    ;;
   *)
     echo -e "${RED}❌ Invalid language: ${lang}${RESET}"
-    echo -e "${YELLOW}⚠️  Available: c, cpp, python${RESET}"
+    echo -e "${YELLOW}⚠️  Available: c, cpp, python, typescript${RESET}"
     exit 1
     ;;
 esac

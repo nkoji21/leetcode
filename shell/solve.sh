@@ -32,6 +32,9 @@ case "$lang" in
   python)
     ext="py"
     ;;
+  typescript)
+    ext="ts"
+    ;;
   *)
     echo -e "${RED}❌ Invalid language in ./language: ${lang}${RESET}"
     exit 1

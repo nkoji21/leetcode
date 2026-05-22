@@ -1,6 +1,7 @@
 {
   "extensions": [
     "llvm-vs-code-extensions.vscode-clangd",
+    "TypeScriptTeam.native-preview",
     "xaver.clang-format"
   ]
 }

@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "scripts": {
+    "typecheck": "tsgo --noEmit",
+    "run": "bun run main.ts"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@typescript/native-preview": "^7.0.0-dev.20260522.1"
+  }
+}
