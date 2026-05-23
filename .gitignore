@@ -3,7 +3,9 @@ contest
 /main.c
 /main.cpp
 /main.py
+/main.ts
 main
+node_modules/
 *.out
 *.exe
 __pycache__/

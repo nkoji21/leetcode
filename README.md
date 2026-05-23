@@ -11,10 +11,11 @@ LeetCode solutions repository
 ### 1. Initial Setup
 
 ```sh
+bun install  # Required for TypeScript
 make init
 ```
 
-Select your preferred language to create a working file.
+Select your preferred language to create a working file. TypeScript uses Bun and TypeScript 7 native preview (`tsgo`).
 
 ### 2. Solve Problems
 
@@ -48,7 +49,7 @@ Switch to a different language.
 
 ```
 .
-├── main.c / main.cpp / main.py  # Working file (language-dependent)
+├── main.c / main.cpp / main.py / main.ts  # Working file (language-dependent)
 ├── language         # Current language setting
 ├── contest          # Current contest setting (lc/nc)
 ├── Makefile
@@ -60,7 +61,8 @@ Switch to a different language.
 ├── _template/       # Language templates
 │   ├── c/main.c
 │   ├── cpp/main.cpp
-│   └── python/main.py
+│   ├── python/main.py
+│   └── typescript/main.ts
 └── _results/        # Saved solutions
     └── lc/
         ├── 0001.c
